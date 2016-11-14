@@ -14,6 +14,7 @@
 		A0A82D941DDA593C00B844E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A82D931DDA593C00B844E4 /* Assets.xcassets */; };
 		A0A82D971DDA593C00B844E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A82D951DDA593C00B844E4 /* LaunchScreen.storyboard */; };
 		A0A82D9F1DDA6C3800B844E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A82D9E1DDA6C3800B844E4 /* Images.xcassets */; };
+		A0A82DA21DDA73C100B844E4 /* ZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A82DA11DDA73C100B844E4 /* ZoomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		A0A82D961DDA593C00B844E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0A82D981DDA593C00B844E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0A82D9E1DDA6C3800B844E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A0A82DA01DDA73C100B844E4 /* ZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomViewController.h; sourceTree = "<group>"; };
+		A0A82DA11DDA73C100B844E4 /* ZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				A0A82D8D1DDA593C00B844E4 /* ViewController.h */,
 				A0A82D8E1DDA593C00B844E4 /* ViewController.m */,
 				A0A82D901DDA593C00B844E4 /* Main.storyboard */,
+				A0A82DA01DDA73C100B844E4 /* ZoomViewController.h */,
+				A0A82DA11DDA73C100B844E4 /* ZoomViewController.m */,
 				A0A82D931DDA593C00B844E4 /* Assets.xcassets */,
 				A0A82D9E1DDA6C3800B844E4 /* Images.xcassets */,
 				A0A82D951DDA593C00B844E4 /* LaunchScreen.storyboard */,
@@ -157,6 +162,7 @@
 				A0A82D8F1DDA593C00B844E4 /* ViewController.m in Sources */,
 				A0A82D8C1DDA593C00B844E4 /* AppDelegate.m in Sources */,
 				A0A82D891DDA593C00B844E4 /* main.m in Sources */,
+				A0A82DA21DDA73C100B844E4 /* ZoomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
