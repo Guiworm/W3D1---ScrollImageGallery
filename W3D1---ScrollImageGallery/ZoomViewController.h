@@ -8,6 +8,12 @@
 
 #import "ViewController.h"
 
-@interface ZoomViewController : ViewController <UIScrollViewDelegate>
+@interface ZoomViewController : UIViewController <UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic) UIImage *image;
+
+
 
 @end

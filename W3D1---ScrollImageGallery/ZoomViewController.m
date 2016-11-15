@@ -9,9 +9,6 @@
 #import "ZoomViewController.h"
 
 @interface ZoomViewController ()
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
 @end
 
 @implementation ZoomViewController
@@ -22,6 +19,8 @@
 	self.scrollView.minimumZoomScale = 0.5;
 	self.scrollView.maximumZoomScale = 4.0;
 	self.scrollView.zoomScale = 1.0;
+	self.imageView = [[UIImageView alloc] initWithImage:self.image];
+	[self.scrollView addSubview: self.imageView];
 }
 
 -(UIView *) viewForZoomingInScrollView:(UIScrollView *)scrollView

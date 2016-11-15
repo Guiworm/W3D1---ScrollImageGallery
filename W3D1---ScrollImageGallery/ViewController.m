@@ -10,19 +10,43 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+	UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showDetails:)];
+	UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showDetails:)];
+	UITapGestureRecognizer *tap3 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showDetails:)];
+
+	[self.image1 addGestureRecognizer:tap1];
+	[self.image2 addGestureRecognizer:tap2];
+	[self.image3 addGestureRecognizer:tap3];
+	[self.image1 setUserInteractionEnabled:YES];
+	[self.image2 setUserInteractionEnabled:YES];
+	[self.image3 setUserInteractionEnabled:YES];
 }
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+	ZoomViewController *detailedView = segue.destinationViewController;
+	UIImageView *imageView = (UIImageView *)[sender view];
+	if(imageView == self.image1){
+		detailedView.image =  self.image1.image;
+	}
+	if(sender == self.image2){
+		detailedView.image =  self.image2.image;
+	}
+	if(sender == self.image3){
+		detailedView.image =  self.image3.image;
+	}
+}
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
+-(void) showDetails:(UITapGestureRecognizer*) sender{
+	[self performSegueWithIdentifier:@"showDetails" sender:sender];
 }
 
 
